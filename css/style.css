@@ -133,6 +133,8 @@ img {
     border: none;
     cursor: pointer;
     padding: 5px;
+    position: relative;
+    z-index: 1000;
 }
 
 .nav-toggle span {
@@ -162,11 +164,17 @@ img {
         opacity: 0;
         visibility: hidden;
         transition: var(--transition);
+        z-index: 999;
+        overflow: hidden;
     }
 
     .nav-links.active {
         opacity: 1;
         visibility: visible;
+    }
+
+    body.menu-open {
+        overflow: hidden;
     }
 
     .nav-links a {
