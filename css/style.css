@@ -378,6 +378,91 @@ a.service-card {
     letter-spacing: 0.05em;
 }
 
+.systems {
+    padding: 8rem 0;
+    background: var(--color-bg-lighter);
+}
+
+.systems-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.system-card {
+    background: var(--color-bg);
+    border: 1px solid #2a2a2a;
+    border-radius: 4px;
+    padding: 3rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.system-name {
+    font-size: clamp(2.5rem, 6vw, 3.5rem);
+    line-height: 1;
+    letter-spacing: -0.02em;
+    color: var(--color-text);
+}
+
+.system-name-bold {
+    font-weight: 800;
+}
+
+.system-name-italic {
+    font-style: italic;
+    font-weight: 400;
+}
+
+.system-class {
+    color: var(--color-accent);
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+}
+
+.system-specs {
+    color: var(--color-text);
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.system-body {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    line-height: 1.7;
+    flex-grow: 1;
+}
+
+.systems-promise {
+    text-align: center;
+    color: var(--color-text);
+    font-size: 1.05rem;
+    font-weight: 500;
+    margin: 3rem auto 0;
+}
+
+.systems-addons {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    margin: 1rem auto 0;
+}
+
+.addons-label {
+    color: var(--color-accent);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    margin-right: 0.75rem;
+}
+
 /* ============================================
    WORK / PORTFOLIO
    ============================================ */
