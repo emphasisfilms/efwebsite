@@ -623,6 +623,20 @@ a.service-card {
     letter-spacing: 0.15em;
 }
 
+.about-origin {
+    color: var(--color-text-muted);
+    opacity: 0.75;
+    font-size: 0.95rem;
+    line-height: 1.8;
+    max-width: 560px;
+    margin: 2.5rem auto 0;
+}
+
+.about-origin em {
+    color: var(--color-text);
+    font-style: italic;
+}
+
 /* ============================================
    CONTACT
    ============================================ */
