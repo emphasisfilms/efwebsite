@@ -1010,3 +1010,32 @@ section[id] {
     border-radius: 4px;
     display: block;
 }
+
+.press-coverage {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.press-coverage li {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+    padding: 0.3rem 0;
+}
+
+.coverage-pub {
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+.press-coverage a {
+    color: var(--color-text-muted);
+    text-decoration: none;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.press-coverage a:hover {
+    color: var(--color-accent);
+    border-bottom-color: var(--color-accent);
+}
