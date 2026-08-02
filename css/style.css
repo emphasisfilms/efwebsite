@@ -914,17 +914,18 @@ section[id] {
     margin-bottom: 2rem;
 }
 
+
 /* ============================================
    PRESS
    ============================================ */
 .press-content {
-    padding: 6rem 0;
+    padding: 5rem 0 6rem;
     background: var(--color-bg);
 }
 
 .press-intro {
     max-width: 640px;
-    margin: 0 auto 4rem;
+    margin: 0 auto 3.5rem;
     text-align: center;
     color: var(--color-text-muted);
     font-size: 1.05rem;
@@ -932,17 +933,46 @@ section[id] {
 }
 
 .press-list {
-    max-width: 800px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
 .press-entry {
-    padding: 2.5rem 0;
-    border-bottom: 1px solid #2a2a2a;
+    background: var(--color-bg-light);
+    border: 1px solid #262626;
+    border-radius: 6px;
+    padding: 2.5rem;
+    margin-bottom: 2rem;
 }
 
-.press-entry:first-child {
-    padding-top: 0;
+.press-entry-thumb {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+}
+
+.press-entry-text {
+    flex: 1;
+    min-width: 0;
+}
+
+.press-thumb {
+    flex: 0 0 190px;
+    display: block;
+}
+
+.press-thumb img {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 4px;
+    display: block;
+}
+
+.press-thumb-tall img {
+    aspect-ratio: auto;
+    object-fit: contain;
+    max-height: 250px;
 }
 
 .press-pub {
@@ -955,10 +985,11 @@ section[id] {
 }
 
 .press-title {
-    font-size: 1.25rem;
+    font-size: 1.3rem;
     font-weight: 600;
     line-height: 1.4;
     margin-bottom: 0.4rem;
+    color: var(--color-text);
 }
 
 .press-title a {
@@ -966,55 +997,28 @@ section[id] {
     text-decoration: none;
 }
 
-.press-title a:hover {
-    color: var(--color-accent);
-}
-
 .press-date {
     color: var(--color-text-muted);
     font-size: 0.85rem;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1rem;
 }
 
 .press-role {
     color: var(--color-text-muted);
     font-size: 0.95rem;
     line-height: 1.7;
-    margin-bottom: 0.9rem;
+    margin-bottom: 1.2rem;
 }
 
 .press-role a {
     color: var(--color-accent);
 }
 
-.press-link {
-    color: var(--color-accent);
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-decoration: none;
-}
-
-.press-entry-thumb {
-    display: flex;
-    gap: 2rem;
-    align-items: flex-start;
-}
-
-.press-entry-text {
-    flex: 1;
-}
-
-.press-thumb img {
-    width: 160px;
-    max-width: 30vw;
-    border-radius: 4px;
-    display: block;
-}
-
 .press-coverage {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 1rem 0 0;
+    border-top: 1px solid #262626;
 }
 
 .press-coverage li {
@@ -1038,4 +1042,21 @@ section[id] {
 .press-coverage a:hover {
     color: var(--color-accent);
     border-bottom-color: var(--color-accent);
+}
+
+@media (max-width: 700px) {
+    .press-entry {
+        padding: 1.75rem;
+    }
+
+    .press-entry-thumb {
+        flex-direction: column-reverse;
+        gap: 1.5rem;
+    }
+
+    .press-thumb {
+        flex: none;
+        width: 100%;
+        max-width: 320px;
+    }
 }
