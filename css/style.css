@@ -626,6 +626,8 @@ a.service-card {
     object-fit: contain;
     opacity: 0.85;
     transition: opacity var(--transition);
+    /* Renders any transparent-background logo as solid white */
+    filter: brightness(0) invert(1);
 }
 
 .ticker-track img:hover {
