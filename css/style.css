@@ -852,6 +852,9 @@ section[id] {
     font-size: 1.25rem;
     color: var(--color-text-muted);
     font-weight: 400;
+    max-width: 620px;
+    margin: 0 auto;
+    line-height: 1.6;
 }
 
 .service-content {
