@@ -1070,3 +1070,18 @@ section[id] {
     text-align: center;
     margin-top: 3rem;
 }
+
+.footer-link {
+    color: var(--color-text-muted);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--color-accent);
+}
+
+.footer-sep {
+    color: var(--color-text-muted);
+    opacity: 0.5;
+    margin: 0 0.35rem;
+}
